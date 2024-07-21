@@ -1,10 +1,6 @@
 # Virtual environment
 venv/
 
-models/ru/**
-models/msk/**
-
-
 
 app/model/
 
@@ -130,3 +126,5 @@ models/ru
 dvclive
 
 .mypy_cache
+
+test.py

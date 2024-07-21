@@ -1,0 +1,6 @@
+outs:
+- md5: bd9efa5f546cc6a5be28008528a89fed.dir
+  size: 258291171
+  nfiles: 25
+  hash: md5
+  path: msk
