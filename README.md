@@ -16,6 +16,8 @@ https://github.com/martynov-dm/mfdp-frontend
 ```
 https://mfdp-api-martynov-dm.amvera.io/api
 https://github.com/martynov-dm/mfdp-api
+
+api docs -  https://mfdp-api-martynov-dm.amvera.io/docs
 ```
 
 ## Endpoints
