@@ -17,9 +17,14 @@ base_path = os.path.join(current_dir, "models")
 model_path_ru = os.path.join(base_path, "ru")
 model_path_msk = os.path.join(base_path, "msk")
 
-predictor_ru = TabularPredictor.load(model_path_ru, verbosity=4)
-predictor_msk = TabularPredictor.load(model_path_msk, verbosity=4)
 
+@app.on_event("startup")
+async def load_models():
+    global predictor_ru, predictor_msk
+    predictor_ru = TabularPredictor.load(model_path_ru, verbosity=4)
+    predictor_ru.persist(models='all')
+    predictor_msk = TabularPredictor.load(model_path_msk, verbosity=4)
+    predictor_msk.persist(models='all')
 
 origins = [
     "http://localhost:5173",
