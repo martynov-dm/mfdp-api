@@ -100,5 +100,5 @@ This guide will walk you through the process of pulling the MFDP API Docker imag
    To access the API documentation, visit:
 
    ```
-   http://localhost:8000/api/docs
+   http://localhost:8000/docs
    ```
