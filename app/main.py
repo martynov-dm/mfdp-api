@@ -23,8 +23,9 @@ predictor_msk = TabularPredictor.load(model_path_msk, verbosity=4)
 
 origins = [
     "http://localhost:5173",
+    "https://mfdp-frontend-martynov-dm.amvera.io",
+    "https://mfdp-api-martynov-dm.amvera.io"
 ]
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
