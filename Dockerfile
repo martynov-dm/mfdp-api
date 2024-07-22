@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM --platform=linux/amd64 python:3.9
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./app /app
 
-CMD ["fastapi", "run", "main.py", "--port", "8002", "--proxy-headers"]
+CMD ["fastapi", "run", "main.py", "--port", "80", "--proxy-headers"]
