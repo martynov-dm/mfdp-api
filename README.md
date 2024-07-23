@@ -19,6 +19,13 @@ https://github.com/martynov-dm/mfdp-api
 
 api docs -  https://mfdp-api-martynov-dm.amvera.io/docs
 ```
+
+## EXPERIMENTS REPO
+
+```
+https://github.com/martynov-dm/mfdp-experiments
+```
+
 **NB:** When making your first request to the API, please be patient. The initial request may take 1-2 minutes to respond as the models need time to load. Subsequent requests will be much faster.
 
 ## Endpoints
