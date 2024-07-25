@@ -2,6 +2,8 @@ from pydantic import BaseModel, Field
 from enum import Enum
 from typing import TypedDict
 
+# На названия полей не смотрите, пожалуйста, это mvp
+
 
 class WallMaterial(str, Enum):
     brevno = "бревно"
