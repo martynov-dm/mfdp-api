@@ -12,7 +12,10 @@ app = FastAPI(root_path="/api")
 
 current_dir = os.path.abspath(os.getcwd())
 
-base_path = os.path.join(current_dir, "models")
+if os.path.exists('/.dockerenv'):
+    base_path = os.path.join(current_dir, "models")
+else:
+    base_path = os.path.join(current_dir, "app", "models")
 
 model_path_ru = os.path.join(base_path, "ru")
 model_path_msk = os.path.join(base_path, "msk")
