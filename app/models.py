@@ -2,19 +2,17 @@ from pydantic import BaseModel, Field
 from enum import Enum
 from typing import TypedDict
 
-# На названия полей не смотрите, пожалуйста, это mvp
-
 
 class WallMaterial(str, Enum):
-    brevno = "бревно"
-    brus = "брус"
-    zhelezo_panels = "железобетонные панели"
-    kirpich = "кирпич"
+    timber = "бревно"
+    bar = "брус"
+    metall_panels = "железобетонные панели"
+    brick = "кирпич"
     metall = "металл"
-    penoblock = "пеноблоки"
-    sandvich_panels = "сэндвич-панели"
+    foam_block = "пеноблоки"
+    sandwich_panels = "сэндвич-панели"
     experiment_materials = "экспериментальные материалы"
-    gazobloki = "газоблоки"
+    gas_block = "газоблоки"
 
 
 class Renovation(str, Enum):
